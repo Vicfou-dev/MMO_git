@@ -221,19 +221,8 @@ Player.onConnect = function(socket,username) {
 			player.pressingAttack = data.state;
 			if(player.pressingAttack){
 				player.mouseAngle = data.angle;
-				player.mana-=3.5;
-			}
-			if(player.direction = 2 && data.angle <=45 || data.angle>=315){
-				
-			}
-			else if(player.direction = 0 && data.angle >= 45 && data.angle < 135){
-				player.direction = 0;
-			}
-			else if(player.direction = 1 && data.angle >= 135 && data.angle <225){
-			}
-			else if(player.direction = 3 && data.angle >= 225 && data.angle <315){
-			}
-			
+				player.mana-=3.5;		
+			}			
 		}
 		if(data.inputId === 'mouseAngle'){
 			if(!player.pressingDown && !player.pressingUp && !player.pressingRight && !player.pressingLeft){
